@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Вирівнювання по верху */
+        }
+
+        .container {
+            display: flex;
+            margin-top: 20px; /* Відступ зверху */
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            margin: 5px; /* Зменшена відстань між боксами */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        #box1 {
+            background-color: #56c99d;
+        }
+
+        #box2 {
+            background-color: #6df76d;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+
+        #box3 {
+            background-color: #ee185f;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box" id="box1">#3</div>
+    <div class="box" id="box2">
+        <p>I'm <br><strong>Mykola Iskra</strong></p>
+        <p>I love swimming.</p>
+    </div>
+    <div class="box" id="box3">#2</div>
+</div>
+
+</body>
+</html>
